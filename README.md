@@ -1,5 +1,5 @@
-# Bingo Challenge developed in HTML/CSS/JS
-Based in [Goncy Bingo Challenge](https://github.com/goncy/bingo-challenge).  
+# Bingo Challenge
+Based in [Goncy Bingo Challenge](https://github.com/goncy/bingo-challenge), developed in HTML/CSS/JS.  
 
 ## DEMO:  
 You can check here: [Test bingo.js](https://codepen.io/ZeR0ByTe/full/ProwwB).
@@ -15,4 +15,5 @@ You can check here: [Test bingo.js](https://codepen.io/ZeR0ByTe/full/ProwwB).
 * You need to press play in order to get new balls.  
 * You can press space to restart the game.  
 * Delivery: Should provide a repository, ideally with a working demo, should have a `npm start`, `npm test` and `npm build` scripts correctly working.  
+* Responsive Design.
 
