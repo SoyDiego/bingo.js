@@ -1,4 +1,4 @@
-# Bingo challenge developed HTML/CSS/JS
+# Bingo Challenge developed in HTML/CSS/JS
 Based in [Goncy Bingo Challenge](https://github.com/goncy/bingo-challenge).  
 
 ## DEMO:  
