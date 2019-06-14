@@ -2,7 +2,8 @@ let container = document.querySelector(".container");
 let randomBall;
 let repeatNumbers = [];
 let countVisibleBalls = 0;
-document.addEventListener("keyup", start);
+let lastBall = document.querySelector('.lastBall');
+document.addEventListener("keydown", start);
 
 //Show balls
 for (let index = 1; index <= 90; index++) {
@@ -13,6 +14,10 @@ function start(e) {
 	//If the key press is the Right Arrow...
 	if (e.which == 39) {
 		randomNumber();
+	}
+
+	if (e.which == 32) {
+		resetGame();
 	}
 }
 
@@ -29,6 +34,11 @@ function noRepeat(randomBall) {
 		repeatNumbers.push(randomBall);
 		//And change the opacity to 1
 		document.getElementById(`${randomBall}`).style.opacity = 1;
+		//And show the lastBall with the ball number.
+		lastBall.style.display = "flex";
+		lastBall.style.opacity = 1;
+		lastBall.innerText = randomBall;
+		//Evaluate if you win...
 		youWin();
 	} else {
 		//If the array (repeatNumbers) doesn't have 90 numbers,
@@ -50,13 +60,19 @@ function youWin() {
 			if (countVisibleBalls == 90) {
 				alert("BINGO! The game will start again...");
 				//And the game start again...
-				for (let index = 1; index <= 90; index++) {
-					document.getElementById(`${index}`).style.opacity = 0.2;
-					repeatNumbers = [];
-					countVisibleBalls = 0;
-				}
+				resetGame();
 			}
 			return true;
 		}
+	}
+}
+
+function resetGame(){
+	for (let index = 1; index <= 90; index++) {
+		document.getElementById(`${index}`).style.opacity = 0.2;
+		repeatNumbers = [];
+		countVisibleBalls = 0;
+		lastBall.style.display = "none";
+		lastBall.innerText = "";
 	}
 }
