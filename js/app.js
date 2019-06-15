@@ -2,7 +2,7 @@ let container = document.querySelector(".container");
 let randomBall;
 let repeatNumbers = [];
 let countVisibleBalls = 0;
-let lastBall = document.querySelector('.lastBall');
+let lastBall = document.querySelector(".lastBall");
 document.addEventListener("keydown", start);
 
 //Show balls
@@ -14,10 +14,12 @@ function start(e) {
 	//If the key press is the Right Arrow...
 	if (e.which == 39) {
 		randomNumber();
-	}
-
-	if (e.which == 32) {
+	//Or if the key press is the SpaceBar..
+	} else if (e.which == 32) {
 		resetGame();
+	//Any other key...
+	}else{
+		alert('Only works with Right Arrow Key (Next Ball) & Spacebar (Reset Game)');
 	}
 }
 
@@ -67,7 +69,7 @@ function youWin() {
 	}
 }
 
-function resetGame(){
+function resetGame() {
 	for (let index = 1; index <= 90; index++) {
 		document.getElementById(`${index}`).style.opacity = 0.2;
 		repeatNumbers = [];
