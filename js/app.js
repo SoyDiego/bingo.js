@@ -64,7 +64,6 @@ function youWin() {
 				//And the game start again...
 				resetGame();
 			}
-			return true;
 		}
 	}
 }
