@@ -1,0 +1,33 @@
+@media all and (max-width: 1199px) {
+}
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+	.title-info {
+		font-size: 20px;
+	}
+
+	.ball,
+	.lastBall {
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+	}
+}
+@media all and (max-width: 575px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.title-info {
+		font-size: 14px;
+	}
+
+	.ball,
+	.lastBall {
+		width: 25px;
+		height: 25px;
+		font-size: 14px;
+	}
+}
