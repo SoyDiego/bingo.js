@@ -1,0 +1,24 @@
+{
+  "name": "bingo.js",
+  "version": "1.0.0",
+  "description": "Based in [Goncy Bingo Challenge](https://github.com/goncy/bingo-challenge), developed in HTML/CSS/JS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoyDiego/bingo.js.git"
+  },
+  "keywords": [],
+  "author": "Diego Franchina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoyDiego/bingo.js/issues"
+  },
+  "homepage": "https://github.com/SoyDiego/bingo.js#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
